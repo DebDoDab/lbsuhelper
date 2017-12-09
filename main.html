@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>LBSU Helper v1.0</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<link rel="stylesheet" href="bootstrap.min.css" type="text/css">
+	</head>
+	<body>
+		<div id="main">
+			<ul id="menu">	
+				<li class="menuItem" id="menuMessage"><a>Выберите номер четверти</a></li>
+				<li id="q25" class="menuItem"><a>4</a></li>
+				<li id="q24" class="menuItem"><a>3</a></li>
+				<li id="q23" class="menuItem"><a>2</a></li>
+				<li id="q21" class="menuItem"><a>1</a></li>
+			</ul>
+			
+			<div id="content" class="container">
+				<div class="alert alert-danger" role="alert" id="errorMessage"></div>
+			
+				<div id="subjects" class="row">
+					<table class="table table-striped" id="subjectInfo">
+						<thead class="thead-inverse">
+							<tr>
+								<th>#</th>
+						      	<th>Предмет</th>
+						      	<th>Средняя</th>
+						      	<th>Оценки</th>
+							</tr>
+						</thead>
+						<tbody id="subjectTable">
+							
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="bootstrap.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>

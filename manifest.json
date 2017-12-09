@@ -1,0 +1,30 @@
+{
+	"description": "LBSU Helper",
+	"manifest_version": 2,
+	"name": "LBSU Helper",
+	"version": "1.0",
+	"homepage_url": "https://lodthe.me/",
+	"icons": {
+		"48": "icons/logo-48.png"
+	},
+	"background": {
+		"scripts": ["jquery-3.2.1.min.js", "background.js"]
+	},
+	"content_scripts": [
+	    {
+	      	"matches": ["*://*.schools.by/pupil/*"],
+	      	"js": ["content.js"]
+	    }
+	 ],
+  	"content_security_policy": "script-src 'self' https://*.schools.by/pupil/*; object-src 'self'",
+	"permissions": [
+		"*://*.schools.by/pupil/*",
+		"activeTab",
+		"tabs"
+	],
+	"browser_action": {
+		"default_icon": "icons/logo-48.png",
+		"default_title": "LBSU Helper",
+	    "default_popup": "main.html"
+	}
+}
